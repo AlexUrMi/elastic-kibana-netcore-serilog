@@ -19,8 +19,8 @@ namespace Elastic.Serilog.Web.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogInformation($"oh hai there! : {DateTime.UtcNow}");
-
+            _logger.LogInformation($"oh hi there! : {DateTime.UtcNow}");
+            _logger.LogDebug($"oh hi there from debug! : {DateTime.UtcNow}");
             try
             {
                 throw new Exception("oops. i haz cause error in UR codez.");
